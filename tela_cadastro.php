@@ -36,7 +36,7 @@
         }
 
         body{
-            background-image: url("pikachu_fundo.jpg");
+            background-image: url("imagem/pikachu_fundo.jpg");
         }
 
     </style>

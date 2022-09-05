@@ -43,7 +43,7 @@
     }
 
     body {
-      background-image: url("abertura_esmeralda.jpg");
+      background-image: url("imagem/abertura_esmeralda.jpg");
       background-position:center;
     }
 
@@ -57,7 +57,7 @@
   <div id="area3">
     <h1>PokeTrader</h1>
     <p>"Vai ser grande a emoção!"</p>
-    <img src="International_Pokémon_logo.jpeg" alt="" height="117px" width="320px">
+    <img src="imagem/International_Pokémon_logo.jpeg" alt="" height="117px" width="320px">
     <p>"Temos que pegar!"</p>
   </div>
   

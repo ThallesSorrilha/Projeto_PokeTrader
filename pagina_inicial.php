@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <link rel="icon" type="image/png" href="imagem/pokemon-icon.png"/>
+    <link rel="icon" type="image/png" href="imagem/pokemon-icon.png" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -48,35 +48,47 @@
             float: right;
             background-color: rgb(165, 42, 42);
         }
+
+        /**/
+        #area {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        h1, p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            font-size: large;
+        }
     </style>
 </head>
 
 <body>
     <nav id="menu-h">
         <ul>
-            <li>
-                <a href="pagina_inicial.php">
-                    Home
-                </a>
-            </li>
+            <li><a href="pagina_inicial.php">Home</a></li>
 
-            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Meus Pokémons</a></li>
 
-            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Amigos</a></li>
 
-            <li><a href="#">Contato</a></li>
+            <li><a href="#">Perfil</a></li>
 
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
 
-    <h1>Bem vindo, (treinador)</h1>
+    <div id="area">
+        <h1>Bem vindo, <?=$_COOKIE["login"]?></h1>
 
-    <p>O que deseja fazer?</p>
+        <p>O que deseja fazer?</p>
 
-    <a href="">gerar pokémon</a> <br><br>
+        <p><a href="">gerar pokémon</a></p>
 
-    <a href="">trocar pokémon com amigos</a>
+        <p><a href="">trocar pokémon com amigos</a></p>
+    </div>
 </body>
 
 </html>

@@ -1,19 +1,19 @@
 <?php
  
-$n = $_GET["nome"];
-$l = $_GET["login"];
-$s = $_GET["senha"];
-$c = $_GET["cidade"];
-$cpf = $_GET["cpf"];
-$e = $_GET["email"];
-$t = $_GET["telefone"];
+$n = $_POST["nome"];
+$l = $_POST["login"];
+$s = $_POST["senha"];
+$c = $_POST["cidade"];
+$cpf = $_POST["cpf"];
+$e = $_POST["email"];
+$t = $_POST["telefone"];
 
 $con = new mysqli("localhost", "root", "", "projeto");
 
-$sql_inserir = "insert into usuario(nome,login,senha,cidade,cpf,email,telefone)
-  values('$n','$l','$s','$c','$cpf','$e','$t')";
+$sql_inserir = "INSERT into usuario(nome,login,senha,cidade,cpf,email,telefone)
+  values('$n','$l','$s',$c,'$cpf','$e','$t')";
 
-$result = $con->query($sql);
+$result = $con->query($sql_inserir);
 
 if ($result->num_rows == 1) {
     header("Location: pagina_inicial.php");

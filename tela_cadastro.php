@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link rel="icon" type="image/png" href="imagem/pokemon-icon.png"/>
 
     <style>
         #area {
@@ -52,7 +53,7 @@
                 <label for="nome">Nome: </label><input type="text" name="nome" id="nome"><br>
                 <label for="login">Login: </label><input type="text" name="login" id="login"><br>
                 <label for="senha">Senha: </label><input type="password" name="senha" id="senha" max="50"><br>
-                <label for="cidade">Cidade: </label><input type="text" name="cidade" id="cidade"><br>
+                <label for="cidade">Cidade: </label><input type="number" name="cidade" id="cidade"><br>
                 <label for="cpf">CPF: </label><input type="text" name="cpf" id="cpf"><br>
                 <label for="email">E-mail: </label><input type="text" name="email" id="email"><br>
                 <label for="telefone">Telefone: </label><input type="text" name="telefone" id="telefone"><br><br>

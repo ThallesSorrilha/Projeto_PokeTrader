@@ -54,7 +54,8 @@
     }
 
     fieldset {
-      background-color: rgba(255, 217, 0, 0.788);
+      background-color: rgba(245, 226, 52, 0.9);
+      border-radius: 2%;
     }
   </style>
 </head>

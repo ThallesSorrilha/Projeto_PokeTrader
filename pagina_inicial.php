@@ -52,7 +52,12 @@
         /**/
         #area {
             text-align: center;
-            margin-top: 70px;
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 60px;
+            width: 500px;
+            border-radius: 1%;
         }
 
         h1, p{

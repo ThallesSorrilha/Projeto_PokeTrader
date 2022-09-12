@@ -37,7 +37,12 @@
         }
 
         body{
-            background-image: url("imagem/pikachu_fundo.jpg");
+            background-image: url("imagem/togepi.jpg");
+            background-position-x: center;
+        }
+
+        fieldset{
+            background-color: rgba(255, 245, 238, 0.800);
         }
 
     </style>

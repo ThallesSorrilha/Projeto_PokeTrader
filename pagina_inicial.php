@@ -1,3 +1,7 @@
+<?php
+    include("restrito.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -49,13 +53,9 @@
             background-color: rgb(165, 42, 42);
         }
 
-        /**/
         #area {
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-
-            margin-top: 60px;
+            margin: 60px auto;
             width: 500px;
             border-radius: 1%;
         }

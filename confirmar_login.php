@@ -1,7 +1,7 @@
 <?php
 
-$login = $_POST["login"];
-$senha = $_POST["senha"];
+$login = trim($_POST["login"]);
+$senha = trim($_POST["senha"]);
 
 if (strlen($login) == 0 || strlen($senha) == 0) {
    header("Location: errol.php");
@@ -9,6 +9,7 @@ if (strlen($login) == 0 || strlen($senha) == 0) {
 }
 
 $con = new mysqli("localhost", "root", "", "projeto");
+/*include("conexao.php");*/
 
 $sql = "SELECT * FROM usuario WHERE login = '$login'
         AND senha = '$senha' ";

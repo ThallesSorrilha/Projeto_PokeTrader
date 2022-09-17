@@ -9,6 +9,7 @@ $e = $_POST["email"];
 $t = $_POST["telefone"];
 
 $con = new mysqli("localhost", "root", "", "projeto");
+/*include("conexao.php");*/
 
 $sql_inserir = "INSERT into usuario(nome,login,senha,cidade,cpf,email,telefone)
   values('$n','$l','$s',$c,'$cpf','$e','$t')";

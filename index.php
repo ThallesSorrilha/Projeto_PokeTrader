@@ -22,7 +22,7 @@
     fieldset {
       width: 240px;
       background-color: rgba(255, 220, 0, 0.850);
-      border-radius: 5px;
+      border-radius: 2px;
       margin: 0 auto;
     }
 
@@ -36,11 +36,15 @@
       display: block;
       padding: 5px;
       width: 90%;
-      margin: 10px auto;
+      margin: 6px auto;
     }
 
     input[type=submit]{
-      margin-left: 20px;
+      margin-left: 5px;
+    }
+
+    input[type=reset]{
+      margin-left: 33px;
     }
 
     input[type=submit],

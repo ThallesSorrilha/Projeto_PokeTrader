@@ -9,24 +9,21 @@
   <link rel="icon" type="image/png" href="imagem/pokemon-icon.png" />
 
   <style>
+    body {
+      background-image: url("imagem/abertura_esmeralda.jpg");
+      background-position: center;
+    }
+
     #area {
-      position: relative;
       width: 320px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
     }
 
-    #area2 {
-      position: relative;
-      width: 300px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30px;
-    }
-
-    #area3 {
-      text-align: center;
+    fieldset {
+      width: 240px;
+      background-color: rgba(255, 220, 0, 0.850);
+      border-radius: 5px;
+      margin: 0 auto;
     }
 
     legend {
@@ -34,8 +31,23 @@
       font-family: "Segoe UI";
     }
 
-    input {
-      margin-top: 1px;
+    input[type=text],
+    input[type=password] {
+      display: block;
+      padding: 5px;
+      width: 90%;
+      margin: 10px auto;
+    }
+
+    input[type=submit]{
+      margin-left: 20px;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+      padding: 5px;
+      width: 40%;
+      cursor: pointer;
     }
 
     h1,
@@ -47,43 +59,27 @@
     p {
       font-size: larger;
     }
-
-    body {
-      background-image: url("imagem/abertura_esmeralda.jpg");
-      background-position: center;
-    }
-
-    fieldset {
-      background-color: rgba(245, 226, 52, 0.9);
-      border-radius: 2%;
-    }
   </style>
 </head>
 
 <body>
-  <div id="area3">
+  <div id="area">
     <h1>PokeTrader</h1>
     <p>"Vai ser grande a emoção!"</p>
     <img src="imagem/International_Pokémon_logo.jpeg" alt="" height="117px" width="320px">
     <p>"Temos que pegar!"</p>
-  </div>
 
-  <div id="area">
     <form action="confirmar_login.php" method="POST" id="formulario">
       <fieldset>
         <legend>Login</legend>
-        <label for="usuario">Login: </label><input type="text" name="login" id="login"><br>
-
-        <label for="senha">Senha: </label><input type="password" name="senha" id="senha" max="50"><br><br>
-
+        <input type="text" name="login" id="login" placeholder="Usuário" class="campotxt">
+        <input type="password" name="senha" id="senha" placeholder="Senha" class="campotxt">
         <input type="submit" value="Entrar">
-        <input type="reset" value="limpar">
+        <input type="reset" value="Limpar">
       </fieldset>
     </form>
-  </div>
 
-  <div id="area2">
-    <p style="margin-top: -60px;">Você ainda não é cadastrado?</p>
+    <p>Você ainda não é cadastrado?</p>
     <p><a href="tela_cadastro.php">Cadastre-se</a></p>
   </div>
 

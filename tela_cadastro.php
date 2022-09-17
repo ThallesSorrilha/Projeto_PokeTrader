@@ -79,11 +79,9 @@
                 <input type="email" name="email" id="email" placeholder="E-mail">
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                 <input type="submit" value="Efetuar">
-                <input type="reset" value="limpar">
+                <input type="reset" value="Limpar">
             </fieldset>
         </form>
     </div>
-
 </body>
-
 </html>

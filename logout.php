@@ -1,6 +1,6 @@
 <?php
-setcookie("login","",time()-3600);
-setcookie("senha","",time()-3600);
+setcookie("login","",time()-60*60*24*2);
+setcookie("senha","",time()-60*60*24*2);
 
 unset($_COOKIE["login"]);
 unset($_COOKIE["senha"]);

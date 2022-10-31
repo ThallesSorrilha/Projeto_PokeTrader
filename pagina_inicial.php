@@ -90,7 +90,7 @@
 
         <p>O que deseja fazer?</p>
 
-        <p><a href="">gerar pokémon</a></p>
+        <p><a href="gerar.php">gerar pokémon</a></p>
 
         <p><a href="">trocar pokémon com amigos</a></p>
     </div>

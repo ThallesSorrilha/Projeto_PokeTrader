@@ -26,8 +26,13 @@ $sql_inserir = "INSERT into usuario(nome,login,senha,cidade,cpf,email,telefone)
 $result = $con->query($sql_inserir);
 
 if ($result) {
-  setcookie("login", "$l");
-  setcookie("senha", "$s");
+  setcookie("nome", $n);
+  setcookie("login", $l);
+  setcookie("senha", $s);
+  setcookie("login", $c);
+  setcookie("login", $cpf);
+  setcookie("login", $e);
+  setcookie("login", $t);
   header("Location: pagina_inicial.php");
   exit(0);
   

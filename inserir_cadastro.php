@@ -1,7 +1,5 @@
 <?php
 
-use LDAP\Result;
-
 $n = trim($_POST["nome"]);
 $l = trim($_POST["login"]);
 $s = trim($_POST["senha"]);
@@ -36,7 +34,6 @@ if ($result && $result2->num_rows == 1) {
   while ($linha = $result2->fetch_assoc()) {
     setcookie("id", $linha["id"]);
   }
-  setcookie("nome", $n);
   setcookie("nome", $n);
   setcookie("login", $l);
   setcookie("senha", $s);

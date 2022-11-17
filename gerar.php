@@ -1,20 +1,14 @@
 <?php
-$u = $_COOKIE["login"];
+$u = $_COOKIE["id"];
  
 $con = new mysqli("localhost", "root", "", "projeto");
  
-$sorteio = rand(1, 151);
- /*
-$json = file_get_contents("https://www.canalti.com.br/api/pokemons.json");
+$sorteio = rand(1, 493);
  
-$json = json_decode($json, true);
-*/
-$sql_id = "SELECT id FROM usuario WHERE login = '$u'";
- 
-$result_select = $con->query($sql_id);
- 
-$sql_gerar = "INSERT into individuo(usuario, pokemon, nome)
-  values('$result_select','$sorteio', '')";
+$sql_gerar = "INSERT into individuo(usuario, especie, nome)
+  values('$u','$sorteio', '')";
+
+setcookie("ger",$sorteio);
  
 $result = $con->query($sql_gerar);
 

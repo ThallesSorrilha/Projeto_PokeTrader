@@ -1,5 +1,7 @@
 <?php
 
+use LDAP\Result;
+
 $n = trim($_POST["nome"]);
 $l = trim($_POST["login"]);
 $s = trim($_POST["senha"]);
@@ -25,14 +27,23 @@ $sql_inserir = "INSERT into usuario(nome,login,senha,cidade,cpf,email,telefone)
 
 $result = $con->query($sql_inserir);
 
-if ($result) {
+$sql_select = "SELECT * FROM usuario WHERE login = '$login'
+        AND senha = '$senha' ";
+
+$result2 = $con->query($sql_select);
+
+if ($result && $result2->num_rows == 1) {
+  while ($linha = $result2->fetch_assoc()) {
+    setcookie("id", $linha["id"]);
+  }
+  setcookie("nome", $n);
   setcookie("nome", $n);
   setcookie("login", $l);
   setcookie("senha", $s);
-  setcookie("login", $c);
-  setcookie("login", $cpf);
-  setcookie("login", $e);
-  setcookie("login", $t);
+  setcookie("cidade", $c);
+  setcookie("cpf", $cpf);
+  setcookie("email", $e);
+  setcookie("telefone", $t);
   header("Location: pagina_inicial.php");
   exit(0);
   
@@ -40,4 +51,3 @@ if ($result) {
   header("Location: erroc.php");
   exit(0);
 }
-?>

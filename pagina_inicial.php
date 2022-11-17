@@ -1,5 +1,5 @@
 <?php
-    include("restrito.php");
+include("restrito.php");
 ?>
 
 <!DOCTYPE html>
@@ -60,11 +60,12 @@
             border-radius: 1%;
         }
 
-        h1, p{
+        h1,
+        p {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        p{
+        p {
             font-size: large;
         }
     </style>
@@ -79,20 +80,20 @@
 
             <li><a href="#">Amigos</a></li>
 
-            <li><a href="#">Perfil</a></li>
+            <li><a href="perfil.php">Perfil</a></li>
 
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
 
     <div id="area">
-        <h1>Bem vindo, <?=$_COOKIE["login"]?></h1>
+        <h1>Bem vindo, <?= $_COOKIE["login"] ?> </h1>
 
         <p>O que deseja fazer?</p>
 
         <p><a href="gerar.php">gerar pokémon</a></p>
 
-        <p><a href="">trocar pokémon com amigos</a></p>
+        <p><a href="tela de troca">trocar pokémon com amigos</a></p>
     </div>
 </body>
 
